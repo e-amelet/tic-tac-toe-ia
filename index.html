@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe IA</h1>
+        <div class="game-info">
+            <div class="player-turn">
+                <span id="playerTurn">Your Turn (X)</span>
+            </div>
+            <div class="score">
+                <div class="score-item">
+                    <span class="score-label">You Won:</span>
+                    <span id="playerWins">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Draws:</span>
+                    <span id="draws">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">IA Won:</span>
+                    <span id="iaWins">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard">
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+        </div>
+
+        <div class="button-group">
+            <button id="resetBtn" class="btn btn-primary">New Game</button>
+            <button id="resetScoreBtn" class="btn btn-secondary">Reset Score</button>
+        </div>
+
+        <div class="game-status" id="gameStatus"></div>
+        <div class="ia-thinking" id="iaThinking" style="display: none;">IA is thinking...</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
